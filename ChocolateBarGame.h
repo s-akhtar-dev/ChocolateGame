@@ -1,6 +1,6 @@
 /**
- * @file main.cpp
- * @brief COMP 157 Chocolate Game
+ * @file ChocolateBarGame.h
+ * @brief Defines ChocolateBarGame class
  * @date September 28th, 2024
  * @author Sarah Akhtar
  */
