@@ -40,8 +40,8 @@ ChocolateBarGame::ChocolateBarGame(const int m, const int n, const int sr, const
 	chocolateBar.at(spoiledRow).at(spoiledCol) = 'X';
 
 	// Determines which player will go first based on the following algorithm:
-	//  -# If m is even and n is even OR if n is odd and m is odd, player first
-	//  -# If m is even and n is odd OR if n is odd and m is even, computer first
+	//  - If m is even and n is even OR if n is odd and m is odd, player first
+	//  - If m is even and n is odd OR if n is odd and m is even, computer first
 	isPlayerTurn = ((m % 2 == 1 && n % 2 == 1) || (m % 2 == 0 && n % 2 == 0));
 	isGameOver = false;
 }
@@ -50,8 +50,8 @@ ChocolateBarGame::ChocolateBarGame(const int m, const int n, const int sr, const
 
 /**
  * @brief Prints out current chocolate bar
- * -# The spoiled piece will be a light shade of brown
- * -# Regular pieces will be a darker shade of brown
+ * - The spoiled piece will be a light shade of brown
+ * - Regular pieces will be a darker shade of brown
  */
 void ChocolateBarGame::printChocolateBar() const {
 	// Avoids printing if game is over
@@ -74,10 +74,10 @@ void ChocolateBarGame::printChocolateBar() const {
 
 /**
  * @brief Updates board from valid user direction selection
- * -# Determines the row or column to be eaten by direction
- * -# Appends the appropriate row/column to an array to display
- * -# Checks if a spoiled piece was consumed to end game
- * -# Prints chocolate consumed for player if not end game
+ * - Determines the row or column to be eaten by direction
+ * - Appends the appropriate row/column to an array to display
+ * - Checks if a spoiled piece was consumed to end game
+ * - Prints chocolate consumed for player if not end game
  * @param direction Representing the direction (u/d/l/r)
  */
 void ChocolateBarGame::updateChocolateBarDirection(const char direction) {
@@ -188,9 +188,9 @@ bool ChocolateBarGame::isValidDirection(const char direction) const {
 
 /**
  * @brief Creates a game loop until the game ends and updates the game
- * -# Loops from game beginning to end, playing all operations
- * -# Operates between player and computer turns each iteration
- * -# Prints chocolate bar each time after update
+ * - Loops from game beginning to end, playing all operations
+ * - Operates between player and computer turns each iteration
+ * - Prints chocolate bar each time after update
  */
 void ChocolateBarGame::startGame() {
 	// Initially prints the board after configuration

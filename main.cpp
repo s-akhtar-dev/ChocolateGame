@@ -26,7 +26,7 @@ int main() {
 
 /**
  * @brief Generates default game instructions and welcome
- * -# Game is 1-indexed from default (0 indices are rejected)
+ * - Game is 1-indexed from default (0 indices are rejected)
  */
 void printStartMessage() {
     cout << ChocolateBarGame::GREEN << endl;
@@ -42,9 +42,9 @@ void printStartMessage() {
 
 /**
  * @brief Creates a chocolate game from dimensions
- * -# Takes in valid chocolate dimensions (m, n)
- * -# Takes in valid spoiled dimensions (sr, sc)
- * -# Creates a new game from ChocolateBarGame to play
+ * - Takes in valid chocolate dimensions (m, n)
+ * - Takes in valid spoiled dimensions (sr, sc)
+ * - Creates a new game from ChocolateBarGame to play
  */
 void createNewChocolateGame() {
     // Prints out initial instructions
